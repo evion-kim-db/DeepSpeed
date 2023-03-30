@@ -196,7 +196,7 @@ class DeepSpeedEngine(Module):
         collate_fn=None,
         config=None,
         config_params=None,
-        dont_change_device=False,
+        dont_change_device=True,
     ):
         super(DeepSpeedEngine, self).__init__()
         self.dont_change_device = dont_change_device
